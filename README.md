@@ -104,12 +104,7 @@ npm start
 Go to:
 [http://localhost:3000](http://localhost:3000)
 
-## Security Note
 
-Never upload `.env` or MongoDB credentials to GitHub.
-If leaked, regenerate credentials in MongoDB Atlas immediately.
 
----
 
-If you want, I can also generate a **beautiful README with screenshots** — just tell me!
 
