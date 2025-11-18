@@ -1,74 +1,55 @@
-# Getting Started with Create React App
+# EdTech Task Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple task manager that helps teachers assign tasks and students track progress — built with a React client and a Node/Express server.
 
-## Available Scripts
+## Features
+- Teacher: create task templates and assign tasks to students
+- Student: view assigned tasks and update progress
+- Authentication (signup/login)
+- REST API with JWT-protected routes
 
-In the project directory, you can run:
+## Tech stack
+- Frontend: React
+- Backend: Node.js, Express
+- Database: MongoDB (or another supported DB)
+- Auth: JWT
 
-### `npm start`
+## Quick start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Prerequisites
+- Node.js (>=14)
+- npm or yarn
+- MongoDB (local or Atlas)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install and run
 
-### `npm test`
+1. Clone the repo
+   git clone https://github.com/kvVyshnavi/Edtech-Task-Manager.git
+   cd Edtech-Task-Manager
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Server
+   cd server
+   npm install
+   Create a .env file (see example below)
+   npm start
 
-### `npm run build`
+3. Client
+   cd ../client
+   npm install
+   npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+By default:
+- Server: http://localhost:5000
+- Client: http://localhost:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Environment variables (example)
+In server/.env:
+- PORT=5000
+- MONGO_URI=your_mongo_connection_string
+- JWT_SECRET=your_jwt_secret
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project structure
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-Sturcture of the folder
 EdTech-task-manager/
 │
 ├── client/
@@ -83,7 +64,7 @@ EdTech-task-manager/
 │   │   │   └── api.js
 │   │   │
 │   │   ├── assets/
-│   │   │   └── home-bg.jpg        ← your homepage picture
+│   │   │   └── home-bg.jpg        ← homepage picture
 │   │   │
 │   │   ├── components/
 │   │   │   ├── Navbar.jsx
@@ -107,7 +88,6 @@ EdTech-task-manager/
 │   ├── package.json
 │   └── README.md
 │
-│
 ├── server/
 │   ├── index.js
 │   ├── package.json
@@ -129,5 +109,11 @@ EdTech-task-manager/
 │   │   └── taskRoutes.js
 │   │
 │   └── .env
-│
+│   |
 └── README.md
+
+## Contributing
+Contributions welcome. Fork the repo, create a branch, make changes, and open a PR.
+
+## License
+MIT
