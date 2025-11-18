@@ -189,3 +189,7 @@ After running both servers open a browser and go to:
 http://localhost:3000
 
 The frontend will load and connect to the backend automatically.
+
+AI Disclaimer:
+
+AI helped with deployment and implementation of the backend. Also helped with javascript code snippets which i couldn't write and know about. Helped with few layouts.
