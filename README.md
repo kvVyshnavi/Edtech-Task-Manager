@@ -40,8 +40,11 @@ client folder
 This contains all frontend code written in React.
 
 src
+
 api
+
 api.js
+
 Contains all API request functions using Axios.
 
 assets
@@ -49,22 +52,33 @@ Contains images such as home-bg.jpg
 
 pages
 Login.jsx
-Signup.jsx
+
+Signup.jsx 
+
 StudentDashboard.jsx
+
 TeacherDashboard.jsx
+
 AddTask.jsx
+
 EditTask.jsx
+
 Home.jsx
+
 CSS files for styling each page
 
 components
 Nav.jsx
+
 Navbar.css
 
+
 App.js
+
 Main file where all routes are set up.
 
 index.js
+
 Entry point of the React application.
 
 server folder
@@ -72,49 +86,69 @@ server folder
 This contains backend code using Node.js and Express.
 
 controllers
+
 authController.js
+
 Handles signup and login logic
 
 taskController.js
+
 Handles creating, editing, assigning and deleting tasks
 
 middleware
+
 auth.js
+
 Checks if JWT token is valid before allowing access
 
 errorHandler.js
+
 Handles errors from backend routes
 
 models
+
 User.js
+
 Defines user schema including name, email, password and role
 
 Task.js
+
 Defines task schema including title, description, assignedTo and status
 
 routes
+
 auth.js
+
 Routes for signup and login
 
 tasks.js
+
 Routes for task creation, editing, deleting and fetching
 
 index.js
+
 Connects all route files together
 
 Tech Stack
+
 Frontend
 
 React
+
 Axios
+
 React Router DOM
 
 Backend
 
 Node.js
+
 Express.js
+
 MongoDB
+
 Mongoose
+
 JWT Authentication
 
 Setup Instructions
