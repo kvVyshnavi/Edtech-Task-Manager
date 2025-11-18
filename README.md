@@ -68,3 +68,66 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sturcture of the folder
+EdTech-task-manager/
+│
+├── client/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   │
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   ├── api/
+│   │   │   └── api.js
+│   │   │
+│   │   ├── assets/
+│   │   │   └── home-bg.jpg        ← your homepage picture
+│   │   │
+│   │   ├── components/
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Footer.jsx   (optional)
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Signup.jsx
+│   │   │   ├── TeacherDashboard.jsx
+│   │   │   └── StudentDashboard.jsx
+│   │   │
+│   │   ├── styles/
+│   │   │   ├── home.css
+│   │   │   ├── auth.css
+│   │   │   ├── navbar.css
+│   │   │   └── dashboard.css
+│   │   │
+│   │   └── styles.css   (global optional)
+│   │
+│   ├── package.json
+│   └── README.md
+│
+│
+├── server/
+│   ├── index.js
+│   ├── package.json
+│   │
+│   ├── config/
+│   │   └── db.js
+│   │
+│   ├── middleware/
+│   │   └── auth.js
+│   │
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── TaskTemplate.js
+│   │   ├── TaskProgress.js
+│   │   └── PersonalTask.js
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   └── taskRoutes.js
+│   │
+│   └── .env
+│
+└── README.md
