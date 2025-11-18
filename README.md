@@ -1,118 +1,124 @@
-# EdTech Task Manager
+EdTech Task Manager
 
-A simple task manager that helps teachers assign tasks and students track progress — built with a React client and a Node/Express server.
+A web application that helps teachers assign tasks and students track progress.
+This project includes a React frontend and a Node.js Express backend with MongoDB.
 
-## Features
-- Teacher: create task templates and assign tasks to students
-- Student: view assigned tasks and update progress
-- Authentication (signup/login)
-- REST API with JWT-protected routes
+Overview
 
-## Tech stack
-- Frontend: React
-- Backend: Node.js, Express
-- Database: MongoDB (or another supported DB)
-- Auth: JWT
+The goal of this project is to provide a simple task management system for education.
+Both students and teachers log in using JWT authentication.
+Each user sees different features based on their role.
 
-Here you go — a **clean, simple README.md** with **NO LINES**, **NO ASCII characters**, **no borders**, **no extra symbols**.
-Just plain text and headings.
-You can paste this directly into your project.
-## Features
+Features
+For Students
 
-### For Students
+View tasks assigned by teachers
+Update progress of each task
+Add personal tasks for private use
+See deadlines and task status clearly
 
-* View class tasks assigned by the teacher
-* Update task progress in real-time
-* Add personal tasks
-* Track deadlines easily
+For Teachers
 
-### For Teachers
+Assign tasks to one student or multiple students
+View student progress in real time
+Edit and delete tasks when required
+Monitor class performance and task completion
 
-* Assign tasks to an entire class
-* Monitor each student's progress
-* View detailed task performance
-* Manage and edit tasks
+System Features
 
-### System Features
+Role based access control
+Secure authentication using JWT
+Simple and clean UI for login, signup and dashboards
+Integration with a MongoDB Atlas database
 
-* Role based access control
-* Secure JWT authentication
-* Clean UI for login, signup, and dashboards
-* MongoDB Atlas database integration
+Project Structure
 
-## Project Structure
+The project contains two main folders: client and server.
 
-client/
-  src/
-  
-    api/
-      api.js
-      
-      assets/
-          home-bg.jpg
-          
-    pages/
-      Login.jsx
-      Signup.jsx
-      Dashboard.css
-      Home.jsx
-      Home.css
-      Login.css
-      Signup.css
-      StudentDashboard.jsx
-      TeacherDashboard.jsx
-      AddTask.jsx
-      EditTask.jsx
-      
-    components/
-      Nav.jsx
-      Navbar.css
-    App.js
-    index.js
+client folder
 
+This contains all frontend code written in React.
 
+src
+api
+api.js
+Contains all API request functions using Axios.
 
-server/
+assets
+Contains images such as home-bg.jpg
 
-  controllers/
-  
-    authController.js
-    taskController.js
-    
-  middleware/
-  
-    auth.js
-    errorHandler.js
-    
-  models/
-  
-    User.js
-    Task.js
-    
-  routes/
-  
-    auth.js
-    tasks.js 
-  index.js
+pages
+Login.jsx
+Signup.jsx
+StudentDashboard.jsx
+TeacherDashboard.jsx
+AddTask.jsx
+EditTask.jsx
+Home.jsx
+CSS files for styling each page
 
+components
+Nav.jsx
+Navbar.css
 
-## Tech Stack
+App.js
+Main file where all routes are set up.
 
+index.js
+Entry point of the React application.
+
+server folder
+
+This contains backend code using Node.js and Express.
+
+controllers
+authController.js
+Handles signup and login logic
+
+taskController.js
+Handles creating, editing, assigning and deleting tasks
+
+middleware
+auth.js
+Checks if JWT token is valid before allowing access
+
+errorHandler.js
+Handles errors from backend routes
+
+models
+User.js
+Defines user schema including name, email, password and role
+
+Task.js
+Defines task schema including title, description, assignedTo and status
+
+routes
+auth.js
+Routes for signup and login
+
+tasks.js
+Routes for task creation, editing, deleting and fetching
+
+index.js
+Connects all route files together
+
+Tech Stack
 Frontend
+
 React
 Axios
 React Router DOM
 
 Backend
+
 Node.js
 Express.js
 MongoDB
 Mongoose
 JWT Authentication
 
-## Setup Instructions
-
-### 1. Install Dependencies
+Setup Instructions
+1. Install Dependencies
 
 Frontend
 cd client
@@ -122,29 +128,30 @@ Backend
 cd server
 npm install
 
-### 2. Configure Environment Variables
+2. Add Environment Variables
 
-Create a file named `.env` inside the server folder and add:
+Inside the server folder create a file named .env and add the following:
 
-MONGO_URI=your_new_mongo_connection_string
+MONGO_URI=your_mongo_connection_string
 JWT_SECRET=your_secret_key
 
-### 3. Run the Project
+MONGO_URI connects your backend to your database.
+JWT_SECRET protects your login tokens.
 
-Start backend
+3. Run the Application
+
+Start the backend
 cd server
 npm run dev
 
-Start frontend
+Start the frontend
 cd client
 npm start
 
-### 4. Open the App
+4. Open the application
 
-Go to:
-[http://localhost:3000](http://localhost:3000)
+After running both servers open a browser and go to:
 
+http://localhost:3000
 
-
-
-
+The frontend will load and connect to the backend automatically.
