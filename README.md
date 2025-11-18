@@ -42,19 +42,49 @@ You can paste this directly into your project.
 
 ## Project Structure
 
-client
-public
-src
-api
-assets
-components
-pages
-styles
-server
-config
-middleware
-models
-routes
+client/
+  src/
+    api/
+      api.js
+      assets/
+          home-bg.jpg
+    pages/
+      Login.jsx
+      Signup.jsx
+      Dashboard.css
+      Home.jsx
+      Home.css
+      Login.css
+      Signup.css
+      StudentDashboard.jsx
+      TeacherDashboard.jsx
+      AddTask.jsx
+      EditTask.jsx
+    components/
+      Nav.jsx
+      Navbar.css
+    App.js
+    index.js
+
+
+
+server/
+  controllers/
+    authController.js
+    taskController.js
+  middleware/
+    auth.js
+    errorHandler.js
+  models/
+    User.js
+    Task.js
+  routes/
+    auth.js
+    tasks.js
+  index.js
+  .env
+  package.json
+
 
 ## Tech Stack
 
