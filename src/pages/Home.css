@@ -1,0 +1,142 @@
+/* ---------------- HERO SECTION ---------------- */
+
+.home-container {
+  padding: 70px 80px;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Background Image */
+  background-image: url("../assets/home-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  z-index: 1;
+}
+
+.home-left {
+  max-width: 650px;
+  background: rgba(255, 255, 255, 0.75); /* soft readable box */
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.home-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.home-desc {
+  font-size: 17px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background-color: #3165e4;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 2px solid #3165e4;
+  padding: 10px 25px;
+  border-radius: 6px;
+  background: transparent;
+  color: #3165e4;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary:hover,
+.btn-outline:hover {
+  opacity: 0.9;
+}
+
+/* ---------------- FEATURES SECTION ---------------- */
+
+.features-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 50px 40px;
+  background: #f8fbff;
+  position: relative;
+  z-index: 2;
+}
+
+.feature-section {
+  width: 300px;
+  background: white;
+  padding: 35px 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.feature-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* ICON CIRCLE */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.blue {
+  background: #e6f0ff;
+  color: #3165e4;
+}
+
+.green {
+  background: #e7fff4;
+  color: #0fb674;
+}
+
+.orange {
+  background: #fff4e6;
+  color: #ff8f2d;
+}
+
+/* FOOTER */
+.footer {
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .features-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
