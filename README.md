@@ -92,11 +92,8 @@ server/
   routes/
   
     auth.js
-    tasks.js
-    
+    tasks.js 
   index.js
-  .env
-  package.json
 
 
 ## Tech Stack
