@@ -44,10 +44,13 @@ You can paste this directly into your project.
 
 client/
   src/
+  
     api/
       api.js
+      
       assets/
           home-bg.jpg
+          
     pages/
       Login.jsx
       Signup.jsx
@@ -60,6 +63,7 @@ client/
       TeacherDashboard.jsx
       AddTask.jsx
       EditTask.jsx
+      
     components/
       Nav.jsx
       Navbar.css
