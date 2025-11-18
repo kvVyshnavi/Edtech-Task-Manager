@@ -14,106 +14,102 @@ A simple task manager that helps teachers assign tasks and students track progre
 - Database: MongoDB (or another supported DB)
 - Auth: JWT
 
-## Quick start
+Here you go — a **clean, simple README.md** with **NO LINES**, **NO ASCII characters**, **no borders**, **no extra symbols**.
+Just plain text and headings.
+You can paste this directly into your project.
+## Features
 
-Prerequisites
-- Node.js (>=14)
-- npm or yarn
-- MongoDB (local or Atlas)
+### For Students
 
-Install and run
+* View class tasks assigned by the teacher
+* Update task progress in real-time
+* Add personal tasks
+* Track deadlines easily
 
-1. Clone the repo
-   git clone https://github.com/kvVyshnavi/Edtech-Task-Manager.git
-   cd Edtech-Task-Manager
+### For Teachers
 
-2. Server
-   cd server
-   npm install
-   Create a .env file (see example below)
-   npm start
+* Assign tasks to an entire class
+* Monitor each student's progress
+* View detailed task performance
+* Manage and edit tasks
 
-3. Client
-   cd ../client
-   npm install
-   npm start
+### System Features
 
-By default:
-- Server: http://localhost:5000
-- Client: http://localhost:3000
+* Role based access control
+* Secure JWT authentication
+* Clean UI for login, signup, and dashboards
+* MongoDB Atlas database integration
 
-## Environment variables (example)
-In server/.env:
-- PORT=5000
-- MONGO_URI=your_mongo_connection_string
-- JWT_SECRET=your_jwt_secret
+## Project Structure
 
-## Project structure
+client
+public
+src
+api
+assets
+components
+pages
+styles
+server
+config
+middleware
+models
+routes
 
-EdTech-task-manager/
-│
-├── client/
-│   ├── public/
-│   │   ├── index.html
-│   │   └── favicon.ico
-│   │
-│   ├── src/
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   ├── api/
-│   │   │   └── api.js
-│   │   │
-│   │   ├── assets/
-│   │   │   └── home-bg.jpg        ← homepage picture
-│   │   │
-│   │   ├── components/
-│   │   │   ├── Navbar.jsx
-│   │   │   └── Footer.jsx   (optional)
-│   │   │
-│   │   ├── pages/
-│   │   │   ├── Home.jsx
-│   │   │   ├── Login.jsx
-│   │   │   ├── Signup.jsx
-│   │   │   ├── TeacherDashboard.jsx
-│   │   │   └── StudentDashboard.jsx
-│   │   │
-│   │   ├── styles/
-│   │   │   ├── home.css
-│   │   │   ├── auth.css
-│   │   │   ├── navbar.css
-│   │   │   └── dashboard.css
-│   │   │
-│   │   └── styles.css   (global optional)
-│   │
-│   ├── package.json
-│   └── README.md
-│
-├── server/
-│   ├── index.js
-│   ├── package.json
-│   │
-│   ├── config/
-│   │   └── db.js
-│   │
-│   ├── middleware/
-│   │   └── auth.js
-│   │
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── TaskTemplate.js
-│   │   ├── TaskProgress.js
-│   │   └── PersonalTask.js
-│   │
-│   ├── routes/
-│   │   ├── authRoutes.js
-│   │   └── taskRoutes.js
-│   │
-│   └── .env
-│   |
-└── README.md
+## Tech Stack
 
-## Contributing
-Contributions welcome. Fork the repo, create a branch, make changes, and open a PR.
+Frontend
+React
+Axios
+React Router DOM
 
-## License
-MIT
+Backend
+Node.js
+Express.js
+MongoDB
+Mongoose
+JWT Authentication
+
+## Setup Instructions
+
+### 1. Install Dependencies
+
+Frontend
+cd client
+npm install
+
+Backend
+cd server
+npm install
+
+### 2. Configure Environment Variables
+
+Create a file named `.env` inside the server folder and add:
+
+MONGO_URI=your_new_mongo_connection_string
+JWT_SECRET=your_secret_key
+
+### 3. Run the Project
+
+Start backend
+cd server
+npm run dev
+
+Start frontend
+cd client
+npm start
+
+### 4. Open the App
+
+Go to:
+[http://localhost:3000](http://localhost:3000)
+
+## Security Note
+
+Never upload `.env` or MongoDB credentials to GitHub.
+If leaked, regenerate credentials in MongoDB Atlas immediately.
+
+---
+
+If you want, I can also generate a **beautiful README with screenshots** — just tell me!
+
