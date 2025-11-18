@@ -50,6 +50,10 @@ In server/.env:
 
 ## Project structure
 
+![Repository file structure](assets/file-structure.svg)
+
+Figure: Repository file structure (top-level)
+
 EdTech-task-manager/
 │
 ├── client/
@@ -79,12 +83,12 @@ EdTech-task-manager/
 │   │   │
 │   │   ├── styles/
 │   │   │   ├── home.css
-│   │   │   ├── auth.css
-│   │   │   ├── navbar.css
-│   │   │   └── dashboard.css
+│   │   │   │   ├── auth.css
+│   │   │   │   ├── navbar.css
+│   │   │   │   └── dashboard.css
+│   │   │   │
+│   │   │   └── styles.css   (global optional)
 │   │   │
-│   │   └── styles.css   (global optional)
-│   │
 │   ├── package.json
 │   └── README.md
 │
