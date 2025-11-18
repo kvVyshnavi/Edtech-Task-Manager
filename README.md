@@ -73,18 +73,23 @@ client/
 
 
 server/
+
   controllers/
     authController.js
     taskController.js
+    
   middleware/
     auth.js
     errorHandler.js
+    
   models/
     User.js
     Task.js
+    
   routes/
     auth.js
     tasks.js
+    
   index.js
   .env
   package.json
